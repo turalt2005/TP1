@@ -1,10 +1,8 @@
-chaine_1 = "I'm at"
-chaine_2 = " my absolute"
-chaine_3 = " limit!"
+def count_word(chaine):
+    # Cette ligne va permettre au code de conter 1 mot chaque fois qu'ìl y a une espace vide dans la phrase
+    return len(chaine.split(' '))
 
-chaine_4 = chaine_1 + chaine_2 + chaine_3  # La 4ieme chaine
-
-print(chaine_4)  #
-"I'm at my absolute limit!"
-
-print(len(chaine_4))  #
+# Lorsque le code va etre executer, la console va nous demander d'ecrire une phrase grace au input
+phrase = input("Ecrit une phrase")
+# Cette ligne va permetre au console de conter le nombre de mot dans la phrase ecrite
+print(count_word(phrase))
